@@ -76,10 +76,8 @@ app
     Article.update({ title: req.body.articleName },
       { $set: req.body },
       function (err) {
-        function (err) {
           if (!err) res.send("<h1>Document is Updated Successfully!</h1>");
           else res.send("<h1>Somethig went wrong Please Try Again!</h1>");
-        }
       });
   })
 
